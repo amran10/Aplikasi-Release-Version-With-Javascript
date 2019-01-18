@@ -89,11 +89,7 @@
       <div id="menu-dropdown">
         <div class="row">
           <div class="col-md-12" align="center">
-                 <!--  <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-                  <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-              <br>
-              <h6 align="left"><b>HCIS</b><br>Human Capital Information System</h6>
-              <hr> -->
+               
           </div>
         </div>
       </div>
@@ -103,15 +99,10 @@
 </div>
   <div align="center">
   <div style="width: 85%;" >
-  <!-- Nav tabs -->
-                <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-                <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-            <br>
-            <h4 align="left"><b>HCIS</b><br>Human Capital Information System</h4><br>  
+ 
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-  <!--Inputan Wika release-->
   <?php
   if(isset($data_cek))
   {
@@ -119,7 +110,7 @@
       {
       $versi = $row->versi;
   ?>
-  <?php echo form_open_multipart(site_url('c_wika/create_modul')); ?>
+  <?php echo form_open_multipart(site_url('c_versi/create_modul')); ?>
    <div class="col-xs-12">
                 <div class="col-md-12" >
                   <div class="form-group">
@@ -196,7 +187,7 @@
         </div>
     </div>
         <div class="col-md-12" align="center" style="padding-right:30px;">
-          <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_wika/create_versi"; ?>">Kembali</a>
+          <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_versi/create_versi"; ?>">Kembali</a>
           <button class="btn btn-primary btn-round" type="submit" name='submit' value='submit' ">Submit</button>
         </div>
       </div>

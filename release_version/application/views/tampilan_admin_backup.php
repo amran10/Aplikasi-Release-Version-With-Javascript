@@ -24,11 +24,7 @@
       <div id="menu-dropdown">
         <div class="row">
           <div class="col-md-12" align="center">
-                 <!--  <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-                  <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-              <br>
-              <h6 align="left"><b>HCIS</b><br>Human Capital Information System</h6>
-              <hr> -->
+                 
           </div>
         </div>
       </div>
@@ -38,22 +34,17 @@
 </div>
   <div align="center">
   <div style="width: 75%;" >
-  <!-- Nav tabs -->
-                <!-- <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-                <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-            <br>
-            <h4 align="left"><b>HCIS</b><br>Human Capital Information System</h4><br> -->
-    <!-- cek akses -->
+ 
   <div align="left" style="padding-right: 10px;">
-    <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_wika/versi"; ?>">Tambah Versi</a>
+    <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_versi/versi"; ?>">Tambah Versi</a>
     <!-- <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_user"; ?>">Tampilan User</a> -->
   </div><br>
       <?php echo form_open_multipart('create_versi'); ?>
       <?php 
-        if(@$wika) {
+        if(@$persi) {
         $sj=1;
         $a=1; $cnt_versi = '';
-        foreach ($wika as $show) { 
+        foreach ($persi as $show) { 
       ?> 
       <div align="left">
       <table class="table table-bordered" style="margin-top: -16px;">
@@ -74,9 +65,9 @@
                  </b></h6></font>
               </td>
               <td width="200" align="right">
-                <a href="<?php echo site_url('c_wika/tmb_modul/'.$show->versi)?>"><img src="<?php echo base_url('images/add1211.png') ?>" style="width:30px;" border=0></a>
-                <a href="<?php echo site_url('c_wika/edit1/'.$show->versi)?>"><img src="<?php echo base_url('images/editblue.png') ?>" style="width:30px;" border=0></a>
-                <a href="<?php echo site_url('c_wika/hapus/'.$show->versi)?>"onclick="return confirm('Anda Yakin Menghapus Versi <?php echo $show->versi; ?> ?');"><img src="<?php echo base_url('images/deleteblue1.png') ?>" style="width:30px;" border=0></a>
+                <a href="<?php echo site_url('c_versi/tmb_modul/'.$show->versi)?>"><img src="<?php echo base_url('images/add1211.png') ?>" style="width:30px;" border=0></a>
+                <a href="<?php echo site_url('c_versi/edit1/'.$show->versi)?>"><img src="<?php echo base_url('images/editblue.png') ?>" style="width:30px;" border=0></a>
+                <a href="<?php echo site_url('c_versi/hapus/'.$show->versi)?>"onclick="return confirm('Anda Yakin Menghapus Versi <?php echo $show->versi; ?> ?');"><img src="<?php echo base_url('images/deleteblue1.png') ?>" style="width:30px;" border=0></a>
               </td>
             </tr>
           </thead>
@@ -95,9 +86,9 @@
               <h6><i><font face="Century Gothic"><?php echo $show->add_modul;?></i></h6></font>
             </td>
             <td align="right">
-                <a href="<?php echo site_url('c_wika/edit/'.$show->id_modul)?>"><font size="-2px;">Edit</font>
+                <a href="<?php echo site_url('c_versi/edit/'.$show->id_modul)?>"><font size="-2px;">Edit</font>
                 <img src="<?php echo base_url('images/edit_p.png') ?>" style="width:15px;" border=0></a> 
-                <a href="<?php echo site_url('c_wika/hapus_modul/'.$show->id_modul)?>"onclick="return confirm('Anda Yakin Menghapus Modul <?php echo $show->add_modul; ?> ?');"><font size="-2px;">Delete</font>
+                <a href="<?php echo site_url('c_versi/hapus_modul/'.$show->id_modul)?>"onclick="return confirm('Anda Yakin Menghapus Modul <?php echo $show->add_modul; ?> ?');"><font size="-2px;">Delete</font>
                 <img src="<?php echo base_url('images/dt_g.png') ?>" style="width:15px;" border=0></a>
             </td>
           </tr>

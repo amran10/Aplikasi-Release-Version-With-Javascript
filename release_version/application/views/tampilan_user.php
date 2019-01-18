@@ -88,11 +88,7 @@
       <div id="menu-dropdown">
         <div class="row">
           <div class="col-md-12" align="center">
-                 <!--  <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-                  <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-              <br>
-              <h6 align="left"><b>HCIS</b><br>Human Capital Information System</h6>
-              <hr> -->
+               
           </div>
         </div>
       </div>
@@ -102,18 +98,12 @@
 </div>
   <div align="center">
   <div style="width: 75%;" >
-  <!-- Nav tabs -->
-                <!-- <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-                <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-            <br>
-            <h4 align="left"><b>HCIS</b><br>Human Capital Information System</h4><br> -->
-
       <?php echo form_open_multipart('create_versi'); ?>
       <?php 
-        if(@$wika) {
+        if(@$persi) {
         $sj=1;
         $a=1; $cnt_versi = '';
-        foreach ($wika as $show) { 
+        foreach ($persi as $show) { 
       ?> 
       <div align="left">
       <table class="table table-bordered" style="margin-top: -10px;">
