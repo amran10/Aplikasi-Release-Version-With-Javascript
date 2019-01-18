@@ -98,11 +98,7 @@
       <div id="menu-dropdown">
         <div class="row">
           <div class="col-md-12" align="center">
-                 <!--  <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-                  <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-              <br>
-              <h6 align="left"><b>HCIS</b><br>Human Capital Information System</h6>
-              <hr> -->
+               
           </div>
         </div>
       </div>
@@ -112,11 +108,7 @@
 </div>
   <div align="center">
   <div style="width: 85%;" >
-  <!-- Nav tabs -->
-                <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-                <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-            <br>
-            <h4 align="left"><b>HCIS</b><br>Human Capital Information System</h4><br>
+
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -127,7 +119,7 @@
       {
       $versi = $row->versi;
   ?>
-  <?php echo form_open_multipart('c_wika/simpanedit1/'.$versi)?>
+  <?php echo form_open_multipart('c_versi/simpanedit1/'.$versi)?>
    <div class="col-xs-12">
         <div class="col-md-12" >
           <div class="form-group">
@@ -148,62 +140,8 @@
           </div>
       </div>
     </div>
-    <!-- <div class="col-xs-12">
-        <div class="col-md-12" > -->
-            <!-- <h3> Actions</h3> -->
-             <!--  <div id="field">
-                <div id="field0"> -->
-                
-                  <!-- Text input-->
-               <!--    <div class="form-group">
-                    <div align="left" for="action_id">
-                      Modul
-                    </div>   
-                  <div>
-                     <select id="add_modul" name="add_modul" class="form-control">
-                            <option value="<?php echo $row->add_modul; ?>"></option>
-                            <option value="OD">OD</option>
-                            <option value="PA">PA</option>
-                            <option value="ESS">ESS</option>
-                            <option value="PFM">PFM</option>
-                            <option value="Talent">Talent</option>
-                            <option value="Training">Training</option>
-                            <option value="MPP">MPP</option>
-                            <option value="Rekrut">Rekrut</option>
-                            <option value="Training">Training</option>
-                            <option value="Payroll">Payroll</option>
-                      </select>
-                    </div>
-                  </div> -->
-                  <!-- Text input-->
-                  <!-- <div class="form-group">
-                    <div align="left" for="action_name">
-                      Menu
-                    </div>  
-                  <div>
-                      <input id="add_menu" name="add_menu" type="text" value="<?php echo $row->add_menu; ?>" placeholder="" class="form-control input-md">
-                    </div>
-                  </div> -->
-                  <!-- File Button --> 
-                  <!-- <div class="form-group">
-                    <div align="left" for="action_json">
-                      Release
-                    </div> 
-                  <div>
-                      <input id="add_release" name="add_release" type="text" value="<?php echo $row->add_release; ?>" placeholder="" class="form-control input-md"> 
-                    </div>
-                  </div>
-                </div> -->
-                <!-- Button -->
-              <!--   <div class="form-group">
-                  <div class="col-md-4">
-                    <button id="add-more" name="add-more" class="btn btn-primary">Add More</button>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           <div class="col-md-12" align="center" style="padding-right:30px;">
-            <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_wika/create_versi"; ?>">Kembali</a>
+            <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_versi/create_versi"; ?>">Kembali</a>
           <button class="btn btn-primary btn-round" type="submit" name='submit' value='submit' ">Submit</button>
         </div>
       </div>

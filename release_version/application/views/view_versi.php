@@ -87,10 +87,7 @@
       <div class="container" id="menu-dropdown">
         <div class="row">
           <div class="col-md-12" align="center">
-                <img src="<?php echo base_url('images/wika.png') ?>" class="kiri">
-            <img src="<?php echo base_url('images/logo_bsi.png') ?>" class="kanan">
-            <br>
-            <h6 align="left"><b>HCIS</b><br>Human Capital Information System</h6>
+              
             <hr>
           </div>
         </div>
@@ -117,9 +114,9 @@
 
   <?php echo form_open_multipart('show_versi'); ?>
   <?php 
-   if(@$wika) {
+   if(@$persi) {
    $a=1; $cnt_versi = '';
-   foreach ($wika as $show) { ?>
+   foreach ($persi as $show) { ?>
 
     <table class="table table-bordered" style="margin-top: 10px; height: 0px; width: 950px;">
           <tbody>
@@ -178,7 +175,7 @@
 
     <?php $a++; } } ?>
   <div class="col-md-12" align="center" style="padding-right:30px;">
-    <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_wika/create_versi"; ?>">Kembali</a>
+    <a class="btn btn-primary btn-round" href="<?php echo base_url()."index.php/c_versi/create_versi"; ?>">Kembali</a>
     <!-- <button class="btn btn-primary btn-round" type="submit" name='submit' value='submit' ">Submit</button> -->
   </div>
 <!--   Core JS Files   -->
